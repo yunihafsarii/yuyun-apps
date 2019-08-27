@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_contact"
+        android:title="Edit"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_edit"
+        >
+    </item>
+
+    <item
+        android:id="@+id/unlock_message"
+        android:title="Edit"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_unlock"
+        >
+    </item>
+
+    <item
+        android:id="@+id/lock_message"
+        android:title="Edit"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_lock"
+        >
+    </item>
+
+
+</menu>

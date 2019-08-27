@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yunihafsari.fypversion3.ui.activities.SocialMediaLoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/social_media_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:src="@drawable/insta"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/login_insta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@color/blue_A100"
+        android:fontFamily="sans-serif"
+        android:text="  Login in to Instagram  "
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="86dp"
+        android:src="@drawable/twitter"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/login_insta"
+        android:layout_alignStart="@+id/imageView2" />
+
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/insta_after_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="you are logged in as "
+        android:textColor="@color/blue_800"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/login_insta"
+        android:layout_alignBottom="@+id/login_insta"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/twitter_after_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twitter_login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="sans-serif"
+        android:text="you are logged in as "
+        android:textColor="@color/blue_800"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+         />
+</RelativeLayout>

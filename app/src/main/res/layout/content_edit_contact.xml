@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_edit_contact"
+    tools:context="com.example.yunihafsari.fypversion3.ui.activities.EditContactActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="720dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_action_phone"
+            />
+
+        <EditText
+            android:layout_marginRight="10dp"
+            android:id="@+id/info_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/image"
+            android:text="+60109391576"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_phone_number"
+            android:text="Mobile"
+            android:layout_toRightOf="@+id/image"
+            android:id="@+id/textView11" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/deep_purple_A100"
+            android:layout_below="@+id/image"
+            />
+
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_action_email"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/view1"
+            android:id="@+id/image2"
+            />
+
+        <EditText
+            android:id="@+id/info_email"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_alignTop="@+id/image2"
+            android:text="yunihafsari158@gmail.com"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/info_email"
+            android:layout_below="@+id/info_email"
+            android:layout_marginTop="10dp"
+            android:text="Personal" />
+
+        <View
+            android:layout_marginTop="50dp"
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/deep_purple_A100"
+            android:layout_below="@+id/info_email"
+            />
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view2"
+            android:id="@+id/image_address"
+            android:background="@drawable/ic_action_addreee"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/info_address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/image_address"
+            android:text="Vista Komanwel C (C-2-5) Kuala Lumpur"
+            android:layout_below="@+id/view2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/text_home"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/info_address"
+            android:layout_toRightOf="@+id/image_address"
+            />
+
+        <View
+            android:layout_marginTop="30dp"
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/deep_purple_A100"
+            android:layout_below="@+id/text_home"
+            />
+
+        <ImageView
+            android:id="@+id/image_relation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view3"
+            android:background="@drawable/ic_action_relation"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:layout_below="@+id/view3"
+            android:layout_toRightOf="@+id/image_address"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Brother"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/info_relation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relation"
+            android:layout_below="@+id/info_relation"
+            android:layout_toRightOf="@+id/image_address"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text_relation2"
+            />
+
+        <View
+            android:layout_marginTop="30dp"
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/deep_purple_A100"
+            android:layout_below="@+id/text_relation2"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_action_name_socialmedia"
+            android:layout_below="@+id/view4"
+            android:id="@+id/image_5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instagram_name"
+            android:layout_below="@+id/view4"
+            android:layout_toRightOf="@+id/image_5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/info_instagram"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:layout_below="@+id/info_instagram"
+            android:layout_toRightOf="@+id/image_5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text_social2"
+            />
+
+        <ImageButton
+            android:id="@+id/edit_instagram"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/view4"
+
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/info_instagram"
+            android:background="@drawable/ins" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twitter_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/text_social2"
+            android:layout_toRightOf="@id/image_5"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/info_twitter"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:id="@+id/twitter"
+            android:layout_below="@+id/info_twitter"
+            android:layout_toRightOf="@+id/image_5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/edit_twitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/text_social2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/info_twitter"
+            android:background="@drawable/tweet" />
+
+        <Button
+            android:id="@+id/edit_friend"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view6"
+            android:layout_marginRight="10dp"
+            android:background="@color/red_400"
+            android:text="Edit" />
+
+        <android.support.v4.widget.Space
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/twitter" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
